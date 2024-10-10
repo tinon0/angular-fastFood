@@ -1,0 +1,7 @@
+<div>
+    <ul>
+        @for (p of lstPedidosParaEntregar; track $index) {
+            <li>{{p.number + "-" + p.name}} <button class="btn btn-warning mt-2" (click)="entregar($index)">Entregar!</button> </li>
+        }
+    </ul>
+</div>
